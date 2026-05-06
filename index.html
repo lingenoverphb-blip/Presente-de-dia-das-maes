@@ -2,53 +2,84 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Minha Galeria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Meu Site</title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background-image: url(");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* CAIXA NO MEIO */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    padding: 30px 50px;
+    border-radius: 10px;
     text-align: center;
 }
 
-h1 {
-    margin: 20px;
+.overlay h1 {
+    font-size: 40px;
 }
 
+.overlay p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* GALERIA */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     padding: 20px;
+    background: #f4f4f4;
 }
 
 .galeria img {
     width: 100%;
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: 0.3s;
 }
 
 .galeria img:hover {
     transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
 }
     </style>
 </head>
 <body>
+    <section class="hero">
+        <div class="overlay">
+            <h1></h1>
+            <p>
+            </p>
+        </div>
+    </section>
 
-    <h1>Minha Galeria de Fotos</h1>
-
-    <div class="galeria">
-        <img src="foto1.jpg" alt=>
-        <img src="foto2.jpg" alt=>
-        <img src="foto3.jpg" alt=>
-        <img src="foto4.jpg" alt=>
-        <img src="foto4.jpg" alt=>
-        <img src="foto4.jpg" alt=>
-        <img src="foto4.jpg" alt=>
-        <img src="foto4.jpg" alt=>
-        <img src="foto4.jpg" alt=>
-    </div>
+    <section class="galeria">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section>
 
 </body>
 </html>
