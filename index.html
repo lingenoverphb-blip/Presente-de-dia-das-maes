@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Galeria</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+    </style>
+</head>
+<body>
+
+    <h1>Minha Galeria de Fotos</h1>
+
+    <div class="galeria">
+        <img src="foto1.jpg" alt=>
+        <img src="foto2.jpg" alt=>
+        <img src="foto3.jpg" alt=>
+        <img src="foto4.jpg" alt=>
+        <img src="foto4.jpg" alt=>
+        <img src="foto4.jpg" alt=>
+        <img src="foto4.jpg" alt=>
+        <img src="foto4.jpg" alt=>
+        <img src="foto4.jpg" alt=>
+    </div>
+
+</body>
+</html>
