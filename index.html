@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <style>
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background-image: url(");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* CAIXA NO MEIO */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 40px;
+}
+
+.overlay p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="overlay">
+            <h1></h1>
+            <p>
+            </p>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section>
+
+</body>
+</html>
