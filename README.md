@@ -1,1 +1,143 @@
-Teste
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <style>
+        /* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HERO (não muda) */
+.hero {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("maee.jpg.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* TEXTO NO MEIO */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* GALERIA BONITA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background: #f4f4f4;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+/* TEXTO */
+.card p {
+    padding: 15px;
+}
+
+/* EFEITO */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+
+    <!-- HERO (continua igual) -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Feliz dia das Mães </h1>
+            <p>Nós te amos muito mãe, eu quero que você saiba que eu, o pai e a duda vamos sempre estar aqui com você.
+            <br>
+            Eu te amo muito mãe, aproveite seu dia</p>
+        </div>
+    </section>
+
+    <!-- GALERIA (melhorada) -->
+    <section class="galeria">
+
+        <div class="card">
+            <img src="eu-duda-e-mae.jpg.jpeg">
+            <p>Te amamos muito mãe</p>
+        </div>
+
+        <div class="card">
+            <img src="eu-e-a-mae.jpg.jpeg">
+            <p>Vou querer ter muitos mais momentos assim com você mãe sempre vou querer</p>
+        </div>
+
+        <div class="card">
+            <img src="eu-mae-duda-jack.jpg.jpeg">
+            <p>Feliz dia das mães!! <br>Obrigada por ser essa mãe e pessoa incrível que você é, eu te amo demais</p>
+        </div>
+
+        <div class="card">
+            <img src="mae-e-pai.jpg.jpeg">
+            <p>Uma muher maravilhosa e uma Mãe melhor ainda, feliz dia das mães meu amor!!</p>
+        </div>
+
+                <div class="card">
+            <img src="mae.jpg.jpeg">
+            <p>A nossa princesa "seja forte e corajosa"</p>
+        </div>
+         <div class="card">
+            <img src="toda-a-familia-2.jpg.jpeg">
+            <p>Muitas vezes podemos brigar mas os momentos que temos que lembrar são estes</p>
+            </div>
+            <div class="card">
+            <img src="rio-mae-e-pai.jpg.jpeg">
+            <p>Duas pessoas incríveis juntas</p>
+            </div>
+            <div class="card">
+            <img src="maeee.jpg.jpeg">
+            <p>Minha fotógrafa</p>
+            </div>
+            <div class="card">
+            <img src="toda-a-familia.jpg.jpeg">
+            <p>Todos nós queremos muitos momentos como estes.</p>
+            </div>
+            <div class="card">
+            <img src="toda familha.jpeg">
+            <p>Eu amo muito todos vcs</p>
+            </div>
+    </section>
+</body>
+</html>
+
